@@ -1,0 +1,21 @@
+<%if(data.title && data.title.length > 0) {%>
+    <h1 class="title">
+        <%=data.title%>
+        <%if(data.title == "公海客户详情") {%>
+     		<button class="close"></button>   
+        <%}%>
+    </h1>
+<%}%>
+<div class="content">
+    <%:filter_data = false%>
+    <%=data.content%>
+    <%:filter_data = true%>
+</div>
+<%if(data.buttons.length > 0) {%>
+    <div class="buttons">
+        <%for(var i = 0, l = data.buttons.length; i < l; ++ i) {%>
+            <%var button = data.buttons[i];%>
+            <input type="button" value="<%=button.text%>" data-index="<%=i%>" class="<%=button.className%>"/>
+        <%}%>
+    </div>
+<%}%>

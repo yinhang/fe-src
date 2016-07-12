@@ -1,0 +1,104 @@
+div.datepicker div.selector {
+    display: inline-block;
+    position: absolute;
+    border-top: none;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+div.datepicker ul.wheel {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+div.datepicker ul.wheel li {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+div.datepicker {
+    height: 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+div.datepicker div.selector div.mask {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+div.datepicker div.selector div.mask.top {
+    top: 0px;
+    background: -moz-linear-gradient(top, #fff, transparent);
+    background: -webkit-linear-gradient(top, #fff, transparent);
+    background: linear-gradient(top, #fff, transparent);
+    border-bottom: 1px solid rgb(255, 212, 142);
+}
+
+div.datepicker div.selector div.mask.bottom {
+    bottom: 0px;
+    background: -moz-linear-gradient(bottom, #fff, transparent);
+    background: -webkit-linear-gradient(bottom, #fff, transparent);
+    background: linear-gradient(bottom, #fff, transparent);
+    border-top: 1px solid rgb(255, 212, 142);
+}
+
+div.datepicker div.title {
+    background-color: rgba(235, 167, 50, 1);
+    height: 40px;
+    position: absolute;
+    top: -40px;
+    width: 100%;
+}
+
+div.datepicker div.panel button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+div.datepicker div.panel button:not(:last-child) {
+    margin-right: 10px;
+}
+
+div.datepicker div.panel {
+    position: absolute;
+    z-index: 2;
+}
+
+div.datepicker div.panel.right {
+    right: 10px;
+    text-align: right;
+}
+
+div.datepicker div.panel.left {
+    left: 10px;
+    text-align: left;
+}
+
+div.datepicker div.title div.week {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+}
+
+div.datepicker ul.wheel li.disabled {
+    color: #cccccc
+}

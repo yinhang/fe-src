@@ -1,0 +1,179 @@
+div.image-uploader {
+    position: relative;
+}
+
+td#headPicUploader div.image-uploader a.pick {
+	box-sizing: border-box; 
+    border: 2px dashed #E7E7E7;
+    border-radius: 8px;
+    background-image:url("/static/image/app/customer/add1.png");
+}
+
+td#headPicUploader div.image-uploader div.image-view{
+	border: 2px dashed #E7E7E7;
+    border-radius: 8px;
+}
+
+div.image-uploader a.pick {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image:url("/static/image/app/multi_image_uploader/uploader_icon.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    border: 1px solid #dddeda;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+}
+
+div.image-uploader a.pick img{
+	position:absolute;
+	top:30%;
+	left:36%;
+	width:30%;
+	height:50%;
+}
+
+div.image-uploader a.pick span{
+	font-size: 16px;
+	display: block;
+	margin-top: 20px;
+	color: #333333;
+	position:absolute;
+	bottom:5px;
+	left:45%;
+	
+}
+
+div.image-uploader.uploaded {
+    
+}
+
+div.image-uploader div.image-view {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+
+div.image-uploader div.image-view img.image {
+    bottom: 0px;
+    display: block;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div.image-uploader.cover::after{
+    content: url("/static/image/app/multi_image_uploader/cover.png");
+    display: block;
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+
+div.image-uploader div.image-view a.select {
+    background-image: url("/static/image/app/multi_image_uploader/down.png");
+    background-position: 5px 11px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    right: 8px;
+    top: 8px;
+    display: block;
+}
+
+div.image-uploader.uploaded div.image-view {
+    display: block;
+    overflow: hidden;
+}
+
+div.image-uploader.uploaded div.image-view div.selectDiv{
+	background-color: #ffffff;
+    position: absolute;
+    width: 100px;
+    right: 8px;
+    top: 42px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+
+div.image-uploader.uploaded div.image-view div.selectDiv button{
+	font-size: 16px;
+	color: #333333;
+	padding: 6px 0;
+	width: 100px;
+}
+
+div.image-uploader.uploaded div.image-view div.selectDiv button:hover{
+	background-color: #16a8e9;
+	color: #ffffff;
+}
+
+div.image-uploader.uploaded a.pick {
+    display: none;
+}
+
+div.image-uploader.uploaded .moxie-shim {
+    display: none;
+}
+
+div.image-uploader div.loading {
+    display: none;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+div.image-uploader.loading div.loading {
+    display: block;
+    font-size: 64px;
+    line-height: 144px;
+    text-align: center;
+    z-index: 2;
+}
+
+div.image-uploader.loading div.loading div.progress {
+    text-align: center;
+}
+
+div.image-uploader.loading div.image-view {
+    
+}
+
+div.image-uploader.loading a.pick {
+    display: none;
+}
+
+div.image-uploader.loading {
+    
+}
+
+div.image-uploader button.remove {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 64px;
+    height: 64px;
+    background-image: url("/static/image/app/multi_image_uploader/remove.png");
+    background-size: 64px 64px;
+    background-color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,15 @@
+div.widget-modal-content div.content div.prompt div.detail {
+    font-size: 14px;
+    padding: 2px 0;
+}
+
+div.widget-modal-content div.content div.prompt h1.input-tip {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+div.widget-modal-content div.content div.prompt textarea.input {
+    height: 64px;
+    margin-top: 4px;
+    width: 100%;
+}

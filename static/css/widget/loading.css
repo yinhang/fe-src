@@ -1,0 +1,31 @@
+div.overlay.loading {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div.widget-modal-content.loading div.content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+div.widget-modal-content.loading div.content::after {
+    display: block;
+    content: "";
+    background-image: url("/static/image/widget/loading/chrysanthemum.png");
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    
+    -webkit-animation-name: rotation;
+    -moz-animation-name: rotation;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1.3s;
+    -moz-animation-duration: 1.3s;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}

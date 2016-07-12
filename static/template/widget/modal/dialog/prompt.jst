@@ -1,0 +1,13 @@
+<div class="prompt">
+    <%if(data.detail && data.detail.length > 0) {%>
+        <div class="detail">
+            <%:filter_data = false%>
+            <%=data.detail%>
+            <%:filter_data = true%>
+        </div>
+    <%}%>
+    <%if(data.inputTip && data.inputTip.length > 0) {%>
+        <h1 class="input-tip"><%=data.inputTip%></h1>
+    <%}%>
+    <textarea class="input"><%=data.input%></textarea>
+</div>

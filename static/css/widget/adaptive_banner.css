@@ -1,0 +1,78 @@
+div.adaptive-banner {
+    position: relative;  
+    overflow: hidden;  
+    background-color: #ffffff;
+}
+
+div.adaptive-banner.loading {
+    background-image: url("/static/image/widget/adaptive_banner/loading.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+div.adaptive-banner.loading div.mask {
+    background-color: transparent;
+}
+
+div.adaptive-banner div.mask {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
+    z-index: 2;
+    width: 50%;
+}
+
+html.browser-ie9lower div.adaptive-banner div.mask {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);  
+}
+
+div.adaptive-banner div.mask.left {
+    left: 0px;
+}
+
+div.adaptive-banner div.mask.right {
+    right: 0px;
+}
+
+div.adaptive-banner ul.list {
+    position: absolute;
+    height: 100%;
+    font-size: 0px;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+div.adaptive-banner ul.list li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    opacity: 0;
+}
+
+html.browser-ie9lower div.adaptive-banner ul.list li {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);  
+}
+
+div.adaptive-banner ul.list li.current {
+}
+
+div.adaptive-banner button.page {
+    position: absolute;
+    width: 68px;
+    height: 106px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+div.adaptive-banner button.page.prev {
+    left: 120px;
+    background-image: url("/static/image/widget/adaptive_banner/prev.png");
+}
+
+div.adaptive-banner button.page.next {
+    right: 120px;
+    background-image: url("/static/image/widget/adaptive_banner/next.png");
+}

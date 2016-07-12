@@ -1,0 +1,68 @@
+div.widget-dialog-content.quick-selector {
+    background-color: rgb(255, 255, 255);
+}
+
+div.widget-dialog-content.quick-selector div.box {
+    width: 100%;
+}
+
+div.widget-dialog-content.quick-selector div.topbar {
+    height: 41px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+div.widget-dialog-content.quick-selector div.topbar h2 {
+    line-height: 41px;
+    font-size: 15px;
+    text-align: center;
+    color: #666666;
+}
+
+div.widget-dialog-content.quick-selector button.op {
+    color: #666666;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgb(239, 239, 239);
+    border-radius: 4px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid rgb(239, 239, 239);
+    padding: 0px 13px;
+}
+
+div.widget-dialog-content.quick-selector button.op.sure {
+    position: absolute;
+    right: 19px;
+    top: 8px;
+}
+
+div.widget-dialog-content.quick-selector button.op.cancel {
+    position: absolute;
+    left: 19px;
+    top: 8px;
+}
+
+div.widget-dialog-content.quick-selector div.content {
+    position: relative;
+}
+
+div.widget-dialog-content.quick-selector div.wheel-selector div.component.select {
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);
+    box-shadow: 0 0 3px rgb(239, 239, 239);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div.widget-dialog-content.quick-selector div.content div.border {
+    border: 1px solid rgb(239, 239, 239);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(239, 239, 239);
+    top: 5px;
+    right: 19px;
+    bottom: 6px;
+    left: 19px;
+    position: absolute;
+}
+

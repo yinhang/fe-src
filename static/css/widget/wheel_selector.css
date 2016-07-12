@@ -1,0 +1,30 @@
+div.wheel-selector {
+    display: inline-block;
+}
+
+div.wheel-selector div.component {
+    box-sizing: border-box;
+}
+
+div.wheel-selector div.component.calibration {
+    text-align: center;
+}
+
+div.wheel-selector div.component.select {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 5px #ffffff;
+}
+
+div.wheel-selector div.component.calibration.disabled {
+    opacity: 0.4;
+}
+
+div.wheel-selector {
+    display: inline-block;
+}
+
+div.wheel-selector div.component.mask {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+

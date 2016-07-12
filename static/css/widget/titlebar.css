@@ -1,0 +1,32 @@
+div.titlebar {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 2;
+}
+
+div.titlebar h1 {
+    font-size: 18px;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+}
+
+div.titlebar div.fun {
+    height: 55px;
+    position: absolute;
+    display: inline-block;
+    line-height: 55px;
+}
+
+div.titlebar div.fun.left {
+    left: 15px;
+}
+
+div.titlebar div.fun.right {
+    right: 15px;
+}
+

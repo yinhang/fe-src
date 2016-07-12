@@ -1,0 +1,34 @@
+div.content-viewer {
+    position: relative;
+}
+
+div.content-viewer li.case {
+    display: none;
+}
+
+div.content-viewer li.case.show {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+div.content-viewer a.page-button {
+    display: block;
+    position: absolute;
+    width: 112px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 0px;
+}
+
+div.content-viewer a.page-button.prev {
+    background-position: 32px 50%;
+    left: 0px;
+    background-image: url("/static/image/widget/prev.png");
+}
+
+div.content-viewer a.page-button.next {
+    background-image: url("/static/image/widget/next.png");
+    background-position: 32px 50%;
+    right: 0px;
+}

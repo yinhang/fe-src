@@ -1,0 +1,60 @@
+({
+    name: "boot",
+    shim: {
+        "vendor/Page": {
+            exports: "page"
+        },
+        "vendor/Swiper2": {
+            exports: "Swiper"
+        },
+        "lib/jQuery": {
+            exports: "$"
+        },
+        "vendor/jQueryTree": {
+            deps: [
+                   "lib/jQuery"
+            ],
+            exports: "$"
+        },
+        "lib/jQueryMobile": {
+            deps: [
+               "lib/jQuery"
+            ],
+            exports: "$"
+        },
+        "vendor/jQueryTransit": {
+            deps: [
+               "lib/jQuery"
+            ],
+            exports: "$"
+        },
+        "vendor/jQueryColor": {
+            deps: [
+               "lib/jQuery"
+            ],
+            exports: "$"
+        },
+        "vendor/Swiper": {
+            exports: "Swiper"
+        },
+        "vendor/jQueryMD5": {
+            deps: [
+                   "lib/jQuery"
+            ],
+            exports: "$"
+        },
+        "vendor/moxie": {
+            
+        },
+        "vendor/plupload.dev": {
+            
+        },
+        "vendor/qiniu": {
+            deps: [
+                "vendor/moxie",
+                "vendor/plupload.dev"
+            ],
+            exports: "Qiniu"
+        }
+    }
+})

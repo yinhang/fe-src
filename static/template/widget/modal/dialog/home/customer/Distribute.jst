@@ -1,0 +1,11 @@
+<div class="distribute">
+    <div class="group">
+	    <ul>
+	    	<%for(var i = 0, l = data.length; i < l; ++ i) {%>
+	    		<%var seller = data[i];%>
+            	<li class="link"><a class="distributeActive" href="javascript: void(0);" data-name="<%=seller.name%>" data-id="<%=seller.uid%>"><%=seller.name%></a></li>
+       		<%}%>
+	    </ul>
+    </div>
+    
+</div>

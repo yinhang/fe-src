@@ -1,0 +1,24 @@
+div.swiper-container div.pagination {
+    font-size: 0px;
+    bottom: 22px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+div.swiper-container div.pagination .swiper-pagination-switch.swiper-active-switch {
+    background-color: rgb(255, 255, 255);
+}
+
+div.swiper-container div.pagination .swiper-pagination-switch {
+    display: inline-block;
+    border: 2px solid rgb(124, 124, 124);
+    background-color: rgb(148, 148, 148);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+div.swiper-container div.pagination .swiper-pagination-switch:not(:last-child) {
+    margin-right: 13px;
+}

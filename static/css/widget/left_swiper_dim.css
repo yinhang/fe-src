@@ -1,0 +1,212 @@
+div.widget-modal-content.pic-viewer {
+	border: 0;
+	background-color: transparent;
+	width: 100%;
+}
+
+.dim-slide-box {
+    /* width: 820px; */
+    /* height: 630px; */
+    padding-top: 20px;
+    margin: 0 auto;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+.swiper-container {
+	position: static;
+}
+div.swiper-container.gallery-top {
+	/* height: 540px;
+	width: 720px; */
+	position: relative;
+}
+div.swiper-container.gallery-top div.item{
+	position: relative;
+	z-index: 1;
+}
+.dim-slide-box .slide-top{
+    position: relative;
+    /* width: 720px;
+    height: 540px; */
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+.dim-slide-box .slide-top .top-prev {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	background: #000;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	cursor:url(http://hunwanjia.com/static/image/app/main/detailsPage/pic_prev_6a81b44.cur),auto;
+}
+.dim-slide-box .slide-top .top-prev:hover {
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.dim-slide-box .slide-top .top-next {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	background: #000;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	cursor: url(http://hunwanjia.com/static/image/app/main/detailsPage/pic_next_4e4363a.cur),auto;
+}
+
+.dim-slide-box .slide-top .top-next:hover {
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+.bottom-nav-bg {
+	background-color: rgba(0,0,0,0.6);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#99000000,endcolorstr=#99000000);
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	z-index: 19999;
+}
+.close {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 20001;
+    background-image: url("http://hunwanjia.com/static/image/app/main/detailsPage/chacha_bc49f2e.png");
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.dim-slide-box .default {
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+
+.dim-slide-box .title-name {
+    position: relative;
+    color: #ffffff;
+    margin: 0 auto;
+    height: 30px;
+}
+.dim-slide-box .title-name span.name {
+	display: inline-block;
+	width: 500px;
+	height: 20px;
+	line-height: 20px;
+	/* text-overflow:ellipsis; */
+	white-space:nowrap;
+	overflow:hidden;
+	font-size: 14px;
+	padding: 5px 0;
+}
+.dim-slide-box .title-name .dim-label {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+.dim-slide-box .slide-top .swiper-slide img {
+	/* width: 720px;
+	height: 540px; */
+	/* overflow: hidden; */
+}
+.dim-slide-box .slide-top a.view-larger {
+	width: 70px;
+	height: 28px;
+	background-image: url(http://hunwanjia.com/static/image/app/main/detailsPage/show-big_9029e2a.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 3;
+    background-size: cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://hunwanjia.com/static/image/app/main/detailsPage/show-big_9029e2a.png',sizingMethod='scale');  
+}
+.dim-slide-box .dim-slide-nav {
+   /*  width: 720px; */
+    height: 120px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding-top: 5px;
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+   .dim-slide-box .dim-slide-nav {
+	  filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#99000000,endColorstr=#99000000);
+   }
+}
+.dim-slide-box .dim-slide-nav .swiper-container {
+    position: relative;
+    overflow: hidden;
+}
+.dim-slide-box .gallery-thumbs {
+    width: 600px;
+    height: 64px;
+    box-sizing: border-box;
+}
+
+.dim-slide-box .gallery-thumbs .swiper-wrapper{
+	width: 700px;
+	height: 64px;
+}
+.dim-slide-box .gallery-thumbs .swiper-wrapper .item {
+    width: 80px;
+    height: 64px;
+    position: relative;
+    cursor: pointer;
+}
+.dim-slide-box .gallery-thumbs .swiper-slide img{
+    width: 80px;
+    height: 60px;
+}
+.dim-slide-box .nav-next,.nav-prev {
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    cursor: pointer;
+    background-size: 18px 44px;
+    width: 17px;
+    height: 30px;
+}
+.dim-slide-box .nav-next{
+    background: url(http://hunwanjia.com/static/image/app/main/detailsPage/arrows_f135425.png) no-repeat;
+    background-position: left bottom;
+}
+.dim-slide-box .default {
+    opacity: 0.3;
+    filter:alpha(opacity=30);
+}
+.dim-slide-box .nav-prev {
+    background: url(http://hunwanjia.com/static/image/app/main/detailsPage/arrows_f135425.png) no-repeat;
+    background-position: left top;
+}
+.dim-slide-box .dim-slide-nav .item .dim {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 80px;
+    height: 60px;
+    background: rgba(0,0,0,0.6);
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+	.dim-slide-box .dim-slide-nav .item .dim {
+		filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#99000000,endColorstr=#99000000);
+	}
+}
+.dim-slide-box .dim-slide-nav .item.active img{
+	border: 2px solid #73B4E0;
+}
+.dim-slide-box .dim-slide-nav .active .dim{
+    display: none;
+}
+.dim-slide-box .dim-slide-nav .onactive .dim {
+	display: none;
+}
+.dim-slide-box .dim-slide-nav .item.onactive img {
+	border: 0;
+}

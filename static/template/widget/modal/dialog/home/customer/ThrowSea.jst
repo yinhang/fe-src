@@ -1,0 +1,29 @@
+<div class="distribute">
+    <%if(data.detail && data.detail.length > 0) {%>
+        <div class="detail">
+            <%:filter_data = false%>
+            <%=data.detail%>
+            <%:filter_data = true%>
+        </div>
+    <%}%>
+    <%if(data.inputTip && data.inputTip.length > 0) {%>
+        <h1 class="input-tip"><%=data.inputTip%>
+        </h1>
+    <%}%>
+    <div class="throw-sea">
+	    <table>
+	    	<tr>
+	    		<td><input class="cause" type="radio" name="radio" value="公司倒闭"/>原因一：<span>公司倒闭</span></td>
+	    	</tr>
+	    	<tr>
+	    		<td><input class="cause" type="radio" name="radio" value="拒绝沟通"/>原因二：<span>拒绝沟通</span></td>
+	    	</tr>
+	    	<tr>
+	    		<td><input class="cause" type="radio" name="radio" value="无法找到联系人"/>原因三：<span>无法找到联系人</span></td>
+	    	</tr>
+	    	<tr>
+	    		<td><input class="cause" type="radio" name="radio" data-type="userinput"/>原因四：<textarea class="input" placeholder="其他"><%=data.input%></textarea></td>
+	    	</tr>
+	    </table>
+    </div>
+</div>

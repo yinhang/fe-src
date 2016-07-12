@@ -1,0 +1,17 @@
+@import url("/static/css/widget/multi_image_uploader/uploader.css?__inline")
+
+ul.multi-image-uploader li {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    font-size: 0px;
+   /*  margin-right: 48px;
+    margin-bottom: 8px; */
+    margin:10px 10px;
+    vertical-align: top;
+}
+
+ul.multi-image-uploader {
+    /* padding-right: 8px; */
+    text-align:center;
+}

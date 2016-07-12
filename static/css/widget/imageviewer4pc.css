@@ -1,0 +1,86 @@
+div.widget-modal-content.imageviewer4pc div.box {
+    
+}
+
+div.widget-modal-content.imageviewer4pc {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+div.widget-modal-content.imageviewer4pc div.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.widget-modal-content.imageviewer4pc div.box a.quit {
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 3;
+    background-image: url("/static/image/widget/imageviewer4pc/quit.png");
+}
+
+div.widget-modal-content.imageviewer4pc div.box a.page-control {
+    width: 50%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    cursor: default;
+    background-repeat: no-repeat;
+}
+
+div.widget-modal-content.imageviewer4pc div.box a.page-control.prev {
+    left: 0px;
+    background-image: url("/static/image/widget/imageviewer4pc/prev.png");
+    background-position: 0px 50%;
+}
+
+div.widget-modal-content.imageviewer4pc div.box a.page-control.next {
+    right: 0px;
+    background-image: url("/static/image/widget/imageviewer4pc/next.png");
+    background-position: 100% 50%;
+}
+
+div.widget-modal-content.imageviewer4pc div.box div.viewer {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+div.widget-modal-content.imageviewer4pc div.num {
+    background-color: #ffffff;
+    bottom: 0;
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    opacity: 0.4;
+    padding: 0 8px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+div.widget-modal-content.imageviewer4pc div.box div.viewer img.show {
+    display: block;
+    opacity: 0;
+}
+
+div.widget-modal-content.imageviewer4pc div.box div.viewer img {
+    display: none;
+    opacity: 0;
+    position: absolute;
+}

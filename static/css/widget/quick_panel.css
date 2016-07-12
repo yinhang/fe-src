@@ -1,0 +1,11 @@
+div.widget-dialog-content.quick-panel a,
+div.widget-dialog-content.quick-panel button {
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+div.widget-dialog-content.quick-panel {
+    background-color: rgb(204, 204, 204);
+}

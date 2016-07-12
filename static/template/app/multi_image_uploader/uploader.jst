@@ -1,0 +1,23 @@
+<div class="image-uploader" id="<%=data.containerId%>">
+    <a href="javascript: void(0);" class="pick" id="<%=data.buttonId%>">
+        
+    </a>
+    <div class="image-view">
+        <%if(data.options != false) {%>
+	        <a href="javascript: void(0);" class="select"></a>
+	        <div class="selectDiv">
+	            <%for(var i = 0, l = data.options.length; i < l; ++ i) {%>
+	                <%var option = data.options[i];%>
+	                <button class="selectBtn" type="button" data-name="<%=option.text%>"><%=option.text%></button>
+	            <%}%>
+	        </div>
+        <%} else {%>
+            <button class="remove" type="button"></button>
+        <%}%>
+	    <img src="" class="image"/>
+    </div>
+    <div class="loading">
+        <div class="progress">0%</div>
+    </div>
+    <input type="hidden" class="image-path" <%if(data.name) {%> name="<%=data.name%>" <%}%>/>
+</div>

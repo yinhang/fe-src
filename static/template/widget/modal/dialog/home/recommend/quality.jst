@@ -1,0 +1,20 @@
+<div class="prompt">
+    <%if(data.detail && data.detail.length > 0) {%>
+        <div class="detail">
+            <%:filter_data = false%>
+            <%=data.detail%>
+            <%:filter_data = true%>
+        </div>
+    <%}%>
+    <%if(data.inputTip && data.inputTip.length > 0) {%>
+        <h1 class="input-tip"><%=data.inputTip%>
+        </h1>
+    <%}%>
+    <textarea class="input" placeholder=""><%=data.input%></textarea>
+    <div class="first-one">
+    	<input class="common" type="radio" name="dataQuality" value="02"/>
+    	<span>普通</span>
+    	<input class="common" type="radio" name="dataQuality" value="01"/>
+    	<span>精选</span>
+    </div>
+</div>

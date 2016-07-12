@@ -1,0 +1,14 @@
+<div class="distribute">
+	<form class="" method="post" action="/client/createVisitRecord.do" onsubmit="return false;">
+	    <div class="new-Record">
+		    预约拜访时间：<input data-validate="{required: '请填写拜访时间'}" class="visitDate" name="appointmentTime" data-fmuse="dp:vendor/DatePicker" data-fmuse-dp-show-time="true" data-fmuse-dp-show-hour="true" data-fmuse-dp-show-minute="true" data-fmuse-dp-show-second="false" data-fmuse-dp-time-format="HH:mm" data-fmuse-dp-time-only="false"/>
+		    拜访方式：
+		    <select name="appointmentWays">
+		    	<option value="登门">登门</option>
+		    	<option value="电话">电话</option>
+		    	<option value="邮件">邮件</option>
+		    </select>
+		    <input type="hidden" name="clientId" value="<%=data.clientId%>"/>
+	    </div>
+	</form>
+</div>
